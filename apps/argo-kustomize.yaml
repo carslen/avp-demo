@@ -16,3 +16,5 @@ spec:
     repoURL: 'https://github.com/carslen/avp-demo'
     targetRevision: 'HEAD'
   project: project-example
+  syncPolicy:
+    automated: { }

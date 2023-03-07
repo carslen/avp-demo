@@ -16,3 +16,5 @@ spec:
     targetRevision: 0.1.1
     chart: avp-demo2
   project: project-example
+  syncPolicy:
+    automated: { }
