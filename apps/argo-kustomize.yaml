@@ -1,0 +1,17 @@
+# Carsten Lenz
+# 2023/03/07
+#
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: avp-demo-kustomize
+spec:
+  destination:
+    name: ''
+    namespace: product-team-example
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: 'kustomize'
+    repoURL: 'https://github.com/carslen/avp-demo'
+    targetRevision: 'HEAD'
+  project: project-example

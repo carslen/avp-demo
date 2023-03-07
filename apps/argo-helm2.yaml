@@ -1,0 +1,17 @@
+# Carsten Lenz
+# 2023/03/07
+#
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: avp-demo-helm2
+spec:
+  destination:
+    name: ''
+    namespace: product-team-example
+    server: 'https://kubernetes.default.svc'
+  source:
+    repoURL: 'https://carslen.github.io/avp-demo'
+    targetRevision: 0.1.1
+    chart: avp-demo2
+  project: project-example
