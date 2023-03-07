@@ -12,7 +12,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://carslen.github.io/avp-demo'
-    targetRevision: 0.1.1
+    targetRevision: 0.1.2
     chart: avp-demo
   project: project-example
   syncPolicy:
