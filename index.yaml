@@ -1,0 +1,39 @@
+apiVersion: v1
+entries:
+  avp-demo:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-07T16:14:10.998322093Z"
+    description: A AVP Demo Chart
+    digest: 06ae4595383389d268060424baf458dfe543f7bbe07a63e1c561511060f24a39
+    home: https://github.com/carslen/avp-demo
+    maintainers:
+    - name: Carsten Lenz (carslen)
+    name: avp-demo
+    sources:
+    - https://github.com/carslen/avp-demo
+    type: application
+    urls:
+    - https://github.com/carslen/avp-demo/releases/download/avp-demo-0.1.1/avp-demo-0.1.1.tgz
+    version: 0.1.1
+  avp-demo2:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-03-07T16:14:11.25895638Z"
+    dependencies:
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.10
+    description: A AVP Demo Chart - with dependencies
+    digest: 8c9af3d86cda3f4f69d7e3742389ef0301496aedb9190cb3510af3701b790eac
+    home: https://github.com/carslen/avp-demo
+    maintainers:
+    - name: Carsten Lenz (carslen)
+    name: avp-demo2
+    sources:
+    - https://github.com/carslen/avp-demo
+    type: application
+    urls:
+    - https://github.com/carslen/avp-demo/releases/download/avp-demo2-0.1.1/avp-demo2-0.1.1.tgz
+    version: 0.1.1
+generated: "2023-03-07T16:14:11.25896658Z"
