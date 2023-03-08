@@ -1,0 +1,10 @@
+secrets:
+  path: <path:product-team-example/data/hello#foo>
+  annotated: "product-team-example/data/hello"
+
+mariadb:
+  auth:
+    database: foo3<path:product-team-example/data/hello#foo>
+    username: "foo"
+  commonLabels:
+    foo: "<path:product-team-example/data/hello#foo>"
