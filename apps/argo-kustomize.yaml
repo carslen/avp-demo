@@ -5,7 +5,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: avp-demo-kustomize
-  namespace: argocd
 spec:
   destination:
     name: ''

@@ -5,7 +5,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: avp-demo-plain
-  namespace: argocd
 spec:
   destination:
     name: ''
