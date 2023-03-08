@@ -5,30 +5,27 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: avp-demo-helm3
-  namespace: argocd
 spec:
   destination:
-    name: ''
     namespace: product-team-example
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://carslen.github.io/avp-demo'
-    targetRevision: 0.1.2
+    targetRevision: 0.2.0
     chart: avp-demo3
     plugin:
-      name: argocd-vault-plugin-helm
       env:
         - name: HELM_VALUES
           value: |
             mariadb:
-                auth:
-                database: foo<path:product-team-example/data/hello#foo>
+              auth:
+                database: foo2<path:product-team-example/data/hello#foo>
                 username: "foo"
               commonLabels:
-                foo: "<path:product-team-example/data/hello#foo>"
+                foo: <path:product-team-example/data/hello#foo>
             secrets:
               path: <path:product-team-example/data/hello#foo>
-              annotated: "product-team-example/data/hello"
+              annotated: 'product-team-example/data/hello'
   project: project-example
   syncPolicy:
     automated: { }

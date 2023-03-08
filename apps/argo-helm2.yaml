@@ -5,7 +5,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: avp-demo-helm2
-  namespace: argocd
 spec:
   destination:
     name: ''
@@ -13,7 +12,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://carslen.github.io/avp-demo'
-    targetRevision: 0.1.2
+    targetRevision: 0.2.0
     chart: avp-demo2
   project: project-example
   syncPolicy:
