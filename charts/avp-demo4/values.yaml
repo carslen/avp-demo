@@ -1,10 +1,10 @@
-secrets: {}
-#  path: <path:product-team-example/data/hello#foo>
-#  annotated: "product-team-example/data/hello"
+secrets:
+  path: ""
+  annotated: ""
 
-mariadb: {}
-#  auth:
-#    database: foo<path:product-team-example/data/hello#foo>
-#    username: "foo"
-#  commonLabels:
-#    foo: "<path:product-team-example/data/hello#foo>"
+mariadb:
+  auth:
+    database: ""
+    username: ""
+  commonLabels:
+    foo: ""

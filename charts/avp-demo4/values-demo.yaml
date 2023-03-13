@@ -4,7 +4,7 @@ secrets:
 
 mariadb:
   auth:
-    database: foo3<path:product-team-example/data/hello#foo>
+    database: foo4<path:product-team-example/data/hello#foo>
     username: "foo"
   commonLabels:
     foo: "<path:product-team-example/data/hello#foo>"
