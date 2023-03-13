@@ -10,13 +10,14 @@ spec:
     namespace: product-team-example
     server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://carslen.github.io/avp-demo'
+    repoURL: 'https://github.com/carslen/avp-demo'
     targetRevision: HEAD
     path: charts/avp-demo4
     plugin:
+#      name: argocd-vault-plugin-helm-args
       env:
-        - name: HELM_VALUES
-          value: values-demo.yaml
+        - name: helm_args
+          value: -f values-demo.yaml
   project: project-example
   syncPolicy:
     automated: { }
