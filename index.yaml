@@ -165,6 +165,25 @@ entries:
   avp-demo4:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-03-14T07:52:01.004783474Z"
+    dependencies:
+    - name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.0.10
+    description: A Helm chart for Kubernetes
+    digest: 68b1159a5a86ec69fde3e88af6683d0d31e32bb353f4b36fa042648036ed62dc
+    home: https://github.com/carslen/avp-demo
+    maintainers:
+    - name: Carsten Lenz (carslen)
+    name: avp-demo4
+    sources:
+    - https://github.com/carslen/avp-demo
+    type: application
+    urls:
+    - https://github.com/carslen/avp-demo/releases/download/avp-demo4-0.2.3/avp-demo4-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-03-14T07:48:39.014350083Z"
     dependencies:
     - name: mariadb
@@ -239,4 +258,4 @@ entries:
     urls:
     - https://github.com/carslen/avp-demo/releases/download/avp-demo4-0.1.0/avp-demo4-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-14T07:48:39.014529985Z"
+generated: "2023-03-14T07:52:01.004822774Z"
