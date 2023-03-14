@@ -1,9 +1,8 @@
-secrets:
-  path: ""
+secrets: {}
 
-mariadb:
-  auth:
-    database: mylala-db
-    username: lala-default
-  commonLabels:
-    foo: commonBar
+mariadb: {}
+#  auth:
+#    database: mylala-db
+#    username: lala-default
+#  commonLabels:
+#    foo: commonBar
