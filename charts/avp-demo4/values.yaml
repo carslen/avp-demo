@@ -1,5 +1,5 @@
 secrets:
-  path: <path:path/data/to/vault/secret#key>
+  path: ""
 
 mariadb:
   auth:
