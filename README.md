@@ -22,12 +22,12 @@ in `values.yaml`.
 
 ### avp-demo3
 
-Same Helm chart then _avp-demo2_, but this time `values.yaml` is empty. Changes are provided in `apps/argo-helm3.yaml`
+Same Helm chart as _avp-demo2_, but this time `values.yaml` is empty. Changes are provided in `apps/argo-helm3.yaml`
 as inline Helm values. 
 
 ### avp-demo4
 
-Once again the same Helm chart, but simulating environment specific settings using `values-demo.yaml`.
+Once again the same Helm chart, with an empty default `values.yaml` file but simulating environment specific settings using `values-demo.yaml`.
 
 ## ArgoCD Applications
 
