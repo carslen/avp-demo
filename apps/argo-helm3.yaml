@@ -11,7 +11,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     repoURL: 'https://carslen.github.io/avp-demo'
-    targetRevision: 0.2.0
+    targetRevision: 0.3.1
     chart: avp-demo3
     plugin:
       env:
@@ -19,10 +19,10 @@ spec:
           value: |
             mariadb:
               auth:
-                database: foo2<path:product-team-example/data/hello#foo>
+                database: foo3<path:product-team-example/data/hello#foo>
                 username: "foo"
               commonLabels:
-                foo: <path:product-team-example/data/hello#foo>
+                foo: helm3
             secrets:
               path: <path:product-team-example/data/hello#foo>
               annotated: 'product-team-example/data/hello'

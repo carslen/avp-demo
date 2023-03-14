@@ -14,10 +14,9 @@ spec:
     targetRevision: HEAD
     path: charts/avp-demo4
     plugin:
-#      name: argocd-vault-plugin-helm-args
       env:
-        - name: helm_args
-          value: -f values-demo.yaml
+        - name: HELM_ARGS
+          value: "-f values-demo.yaml"
   project: project-example
   syncPolicy:
     automated: { }
