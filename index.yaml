@@ -388,4 +388,15 @@ entries:
     urls:
     - https://github.com/carslen/avp-demo/releases/download/avp-demo4-0.1.0/avp-demo4-0.1.0.tgz
     version: 0.1.0
-generated: "2023-03-14T16:38:12.462829102Z"
+  demo1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-03-15T14:50:45.503374259Z"
+    description: A Helm chart for Kubernetes
+    digest: 698a8d219e60ceb19ea791664d3bb916cd974783577ad7118311f42ebd8a7423
+    name: demo1
+    type: application
+    urls:
+    - https://github.com/carslen/avp-demo/releases/download/demo1-0.1.0/demo1-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-03-15T14:50:45.503415859Z"
